@@ -1,0 +1,19 @@
+<persistence version="2.1"
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="Primary" transaction-type="RESOURCE_LOCAL">
+		<class>ua.company.entity.Company</class>
+		<properties>
+			<property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect" />
+			<property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
+			<property name="hibernate.connection.url" value="jdbc:postgresql://ec2-46-137-125-22.eu-west-1.compute.amazonaws.com:5432/d5t8rdqui4rmth" />
+			<property name="hibernate.connection.username" value="lralhxdizsbrqr" />
+			<property name="hibernate.connection.password" value="Km4t_ZVpe2ucFRfrm1SulJGHAH" />
+			<property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect" />
+			<property name="hibernate.hbm2ddl.auto" value="validate" />
+			<property name="hibernate.show_sql" value="true" />
+
+		</properties>
+	</persistence-unit>
+
+</persistence>
