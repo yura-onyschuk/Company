@@ -67,7 +67,7 @@ public class CompanyController {
 		editingC.setEstimatedAnnualEarnings(estimatedAnnualEarnings);
 		if (parent.equals(editingC.getCompanyName()) | isChild(parent, companyID)) {
 			companyService.updateCompany(editingC);
-		} else if (parent==0) {
+		} else if (parent==0|parent==editingC.getCompanyID()) {
 			if (editingC.getParentID() != null) {
 				Company old = companyService.showByID(editingC.getParentID());
 				old.setAllEarnings(old.getAllEarnings() - editingC.getAllEarnings());
